@@ -6,7 +6,7 @@ function download(){
  var appWindow = window.open("https://www.thitethite.site?link="+current_link,"blank");
  setTimeout( function () {
  if (appWindow) {
- appWindow.location ="https://play.google.com/store/apps/details?id=com.thite.apyarsone"; } },1000);
+ appWindow.location ="https://www.thitethite.site"; } },1000);
  }
 
 
@@ -88,10 +88,10 @@ class="button btn0" id="download"  role="button">Download</button>
     document.getElementById("download").addEventListener("click",download);
     document.getElementById("oia").addEventListener("click", _ => {
 
-              var appWindow = window.open("th://xmovie/?url="+id,"blank");
+              var appWindow = window.open("https://www.thitethite.site"+id,"blank");
  setTimeout( function () {
  if (appWindow) {
- appWindow.location ="https://play.google.com/store/apps/details?id=com.thite.apyarsone"; } },1000);
+ appWindow.location ="https://www.thitethite.site"; } },1000);
 
 
 
