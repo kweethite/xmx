@@ -3,7 +3,7 @@ var id = "this video id :3";
 
 
 function download(){
- var appWindow = window.open("th://xdown/?link="+current_link,"blank");
+ var appWindow = window.open("https://www.thitethite.site?link="+current_link,"blank");
  setTimeout( function () {
  if (appWindow) {
  appWindow.location ="https://play.google.com/store/apps/details?id=com.thite.apyarsone"; } },1000);
@@ -31,7 +31,7 @@ var d = new URL(location).searchParams.get("path");
 
 
  id = d;
-var encode_url = encodeURI("https://www.xvideos.com/embedframe/"+d);
+var encode_url = encodeURI("https://www.xvideos3.com/embedframe/"+d);
 /*    34.123. is  my api from gcloud server
      if you need one  contact :thitethite080@gmail.com
 
