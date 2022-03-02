@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+<script>
+var url = window.location;
+
+var tg = new URL(url).searchParams.get("tg");
+
+if (tg){
+url = tg;
+}else{
+url = encodeURI("https://www.xvideos3.com");
+}
+
+tg  = "https://api.allorigins.win/get?url="+url;
+
+
+fetch(url)
+.then((res) => {
+
+    return res.json();
+
+  })
+
+  .then((gen1) => {
+     document.getElementById("bd").innerHTML = gen1.contents;
+
+    }
+
+
+
+
+</script>
+</head>
+<body id="bd">
+
+</body>
+
+</html>
