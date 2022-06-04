@@ -188,11 +188,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 // To start, simply enter some JavaScript anywhere on this page. Your
 // report will appear on the right side.
 //
-// Additionally, you can toggle specific options in the Configure
-// menu
+// Additionally, you can toggle specific options in the Con
 
 
-var url = "https://";
+var url = window.location.href;
 var production = false;
 try{ 
 var tg = new URL(url).searchParams.get("id");
