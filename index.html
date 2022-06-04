@@ -205,7 +205,7 @@ var tg = new URL(url).searchParams.get("tg");
 if (tg) {
 	tg = "https://www.xvideos.com/embedframe/" + tg;
 	url = tg;
-	production = true;
+	//production = true;
 } else {
 	url = encodeURI("https://www.xvideos3.com/video66351081/https_bit.ly_3gjwmyr_my_friend_18yo_sister_tempted_me_with_showing_her_crotch_with_a_small_smile_the_stuffy_panties_straddled_the_face._japanese_amateur_homemade_porn._part_1_");
 }
@@ -310,7 +310,7 @@ fetch(tg)
 		return res.json();
 	})
 	.then(function _(gen1) {
-		document.getElementById("current_title").innerHTML = gen1.contents.split('title" content="')[1].split('"')[0];
+		document.getElementById("current_title").innerHTML = "Ready ";
 
 
 		let play_link = gen1.contents.split("html5player.setVideoUrlLow('")[1].split("'")[0];
