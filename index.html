@@ -190,6 +190,20 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 //
 // Additionally, you can toggle specific options in the Con
 
+
+var url = window.location.href;
+var production = false;
+try{ 
+var tg = new URL(url).searchParams.get("tg");
+} catch(err){ 
+
+    alert(err.message);
+
+
+    }
+
+
+
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -226,7 +240,7 @@ document.cookie = "t=1";
 alert("ကြော်ညာလေး ခနကြည့်ပေးပါ");
 
 try{
-location.href = "https://ddadddddda.blogspot.com";
+location.replace("https://ddadddddda.blogspot.com?d="+tg);
     }catch(e){alert(e.message)}
 
 
@@ -251,16 +265,6 @@ document.cookie = "t=1";
 
 
 
-var url = window.location.href;
-var production = false;
-try{ 
-var tg = new URL(url).searchParams.get("tg");
-} catch(err){ 
-
-    alert(err.message);
-
-
-    }
 
 if (tg) {
 	tg = "https://www.xvideos.com/embedframe/" + tg;
