@@ -191,22 +191,53 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 // Additionally, you can toggle specific options in the Con
 
 
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
 
-if(document.cookie == "t=1"){
+
+
+
+
+
+
+
+var atm = getCookie("t");
+if(atm == "t=1"){
   document.cookie = "t=2";
+}
 
-}else if (document.cookie == "t=2"){
+if (atm == "2"){
 
 document.cookie = "t=3";
+}
 
-}else if (document.cookie == "t=3"){
-     documemt.cookie = "t1";
+if (atm == "3"){
+     documemt.cookie = "t=1";
+alert("ကြော်ညာလေး ခနကြည့်ပေးပါ");
 ‌window.location.href = "https://ddadddddda.blogspot.com/";
-}else if (document.cookie == ""){
-document.cookie = "t1";
+}
+if (document.cookie == ""){
+document.cookie = "t=1";
 
-} else {document.cookie = "t1";}
+} 
+
+
+
     
+
 
 
 
