@@ -3,10 +3,10 @@ var id = "this video id :3";
 
 
 function download(){
- var appWindow = window.open("https://www.thitethite.site?link="+current_link,"blank");
+ var appWindow = window.open("https://freenetmyanmarth.blogspot.com/?link="+current_link,"blank");
  setTimeout( function () {
  if (appWindow) {
- appWindow.location ="https://www.thitethite.site"; } },1000);
+ appWindow.location ="https://freenetmyanmarth.blogspot.com/"; } },1000);
  }
 
 
@@ -88,10 +88,10 @@ class="button btn0" id="download"  role="button">Download</button>
     document.getElementById("download").addEventListener("click",download);
     document.getElementById("oia").addEventListener("click", _ => {
 
-              var appWindow = window.open("https://www.thitethite.site"+id,"blank");
+              var appWindow = window.open("https://freenetmyanmarth.blogspot.com/"+id,"blank");
  setTimeout( function () {
  if (appWindow) {
- appWindow.location ="https://www.thitethite.site"; } },1000);
+ appWindow.location ="https://freenetmyanmarth.blogspot.com"; } },1000);
 
 
 
